@@ -9,7 +9,7 @@ export default function TermsAndConditions() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
             <h1 className="text-4xl font-bold text-gray-900 mb-8">Terms and Conditions</h1>
-            <p className="text-gray-600 mb-8">Effective Date: 15/09/2024</p>
+            <p className="text-gray-600 mb-8">Effective Date: 15/08/2025</p>
 
             <p className="text-gray-700 mb-8">
               These Terms and Conditions ("Terms") govern the access to and use of Travlprep ("the App") and the Travlprep website located at https://travlprep.com (collectively referred to as "the Services") by users ("Users"). By downloading, accessing, or using the App or the website, Users agree to these Terms.
