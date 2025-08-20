@@ -48,15 +48,30 @@ export default function Footer() {
 
           {/* Social Media Icons */}
           <div className="flex justify-start md:justify-end space-x-6">
-            <Link href="#" className="text-white hover:text-gray-300 transition-colors">
+            <a 
+              href="https://www.instagram.com/travlprep/" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-gray-300 transition-colors"
+            >
               <FontAwesomeIcon icon={faInstagram} className="h-8 w-8" />
-            </Link>
-            <Link href="#" className="text-white hover:text-gray-300 transition-colors">
+            </a>
+            <a 
+              href="https://www.tiktok.com/@travlprep" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-gray-300 transition-colors"
+            >
               <FontAwesomeIcon icon={faTiktok} className="h-8 w-8" />
-            </Link>
-            <Link href="#" className="text-white hover:text-gray-300 transition-colors">
+            </a>
+            <a 
+              href="https://youtube.com/travlprep" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-gray-300 transition-colors"
+            >
               <FontAwesomeIcon icon={faYoutube} className="h-8 w-8" />
-            </Link>
+            </a>
           </div>
         </div>
 
