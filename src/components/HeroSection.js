@@ -62,9 +62,9 @@ export default function HeroSection() {
             <Image
               src="/main-img.png"
               alt="Travlprep App Screenshots"
-              width={600}
-              height={500}
-              className="w-full max-w-lg h-auto"
+              width={700}
+              height={580}
+              className="w-full max-w-xl h-auto"
               priority
             />
           </div>
