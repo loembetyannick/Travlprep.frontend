@@ -14,7 +14,7 @@ export default function PrivacyPolicy() {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Introduction</h2>
               <p className="text-gray-700 mb-4">
-                Outmade Ltd ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Travlprep mobile application and web services ("App").
+                Outmade Ltd (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Travlprep mobile application and web services (&quot;App&quot;).
               </p>
               <p className="text-gray-700 mb-4">
                 Travlprep is a collaborative travel planning platform that helps you organize trips, share itineraries with friends and family, manage packing lists, store travel photos, and keep all your travel information in one organized place.
@@ -93,7 +93,7 @@ export default function PrivacyPolicy() {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">6. Changes to This Privacy Policy</h2>
               <p className="text-gray-700 mb-4">
-                We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. We will notify you of any material changes by posting the new Privacy Policy in the App and updating the "Last updated" date.
+                We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. We will notify you of any material changes by posting the new Privacy Policy in the App and updating the &quot;Last updated&quot; date.
               </p>
               <p className="text-gray-700 mb-4">
                 Your continued use of the App after such modifications constitutes your acknowledgment and acceptance of the updated Privacy Policy.
@@ -108,7 +108,7 @@ export default function PrivacyPolicy() {
               <div className="text-gray-700">
                 <p className="mb-2"><strong>Outmade Ltd</strong></p>
                 <p className="mb-2">Email: <a href="mailto:support@travlprep.com" className="text-blue-600 hover:text-blue-800">support@travlprep.com</a></p>
-                <p className="mb-2">App: Use the "Account" section for data export and deletion</p>
+                <p className="mb-2">App: Use the &quot;Account&quot; section for data export and deletion</p>
               </div>
             </section>
           </div>

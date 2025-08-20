@@ -9,10 +9,10 @@ export default function TermsAndConditions() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
             <h1 className="text-4xl font-bold text-gray-900 mb-8">Terms and Conditions</h1>
-            <p className="text-gray-600 mb-8">Effective Date: 15/08/2025</p>
+            <p className="text-gray-600 mb-8">Effective Date: 15/09/2024</p>
 
             <p className="text-gray-700 mb-8">
-              These Terms and Conditions ("Terms") govern the access to and use of Travlprep ("the App") and the Travlprep website located at https://travlprep.com (collectively referred to as "the Services") by users ("Users"). By downloading, accessing, or using the App or the website, Users agree to these Terms.
+              These Terms and Conditions (&quot;Terms&quot;) govern the access to and use of Travlprep (&quot;the App&quot;) and the Travlprep website located at https://travlprep.com (collectively referred to as &quot;the Services&quot;) by users (&quot;Users&quot;). By downloading, accessing, or using the App or the website, Users agree to these Terms.
             </p>
 
             <section className="mb-8">
@@ -35,7 +35,7 @@ export default function TermsAndConditions() {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">3. Content Uploads</h2>
               <p className="text-gray-700 mb-4">
-                Users may upload text, images, or other content ("User Content") within the App. By uploading User Content, Users grant Travlprep the non-exclusive, worldwide, royalty-free right to use, reproduce, modify, and distribute the content within the App.
+                Users may upload text, images, or other content (&quot;User Content&quot;) within the App. By uploading User Content, Users grant Travlprep the non-exclusive, worldwide, royalty-free right to use, reproduce, modify, and distribute the content within the App.
               </p>
               <p className="text-gray-700 mb-4">
                 Users must ensure that their content does not violate any intellectual property rights, privacy rights, or other legal regulations. Any violations may result in the removal of content or account suspension.
@@ -52,7 +52,7 @@ export default function TermsAndConditions() {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">5. Purchases</h2>
               <p className="text-gray-700 mb-4">
-                Travlprep offers in-app purchases, which may include digital goods, services, or subscriptions. Purchases are non-refundable unless required by law. Users can cancel subscriptions at any time through their device's subscription management service.
+                Travlprep offers in-app purchases, which may include digital goods, services, or subscriptions. Purchases are non-refundable unless required by law. Users can cancel subscriptions at any time through their device&apos;s subscription management service.
               </p>
             </section>
 
@@ -73,7 +73,7 @@ export default function TermsAndConditions() {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">8. Ownership of Content</h2>
               <p className="text-gray-700 mb-4">
-                Outmade LTD retains exclusive rights over all content related to the App's logo, visual design, trademarks, and other proprietary information. Unauthorized use of Travlprep's content is prohibited.
+                Outmade LTD retains exclusive rights over all content related to the App&apos;s logo, visual design, trademarks, and other proprietary information. Unauthorized use of Travlprep&apos;s content is prohibited.
               </p>
             </section>
 
