@@ -13,15 +13,20 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-6">Company</h3>
             <div className="space-y-4">
-              <Link href="/press" className="block text-gray-300 hover:text-white transition-colors">
+              <a href="mailto:support@travlprep.com" className="block text-gray-300 hover:text-white transition-colors">
                 Press
-              </Link>
-              <Link href="/email" className="block text-gray-300 hover:text-white transition-colors">
+              </a>
+              <a href="mailto:support@travlprep.com" className="block text-gray-300 hover:text-white transition-colors">
                 Email
-              </Link>
-              <Link href="/download" className="block text-gray-300 hover:text-white transition-colors">
+              </a>
+              <a 
+                href="https://apps.apple.com/gb/app/travlprep-travel-planner/id6670488133" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-gray-300 hover:text-white transition-colors"
+              >
                 Download Travlprep
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -29,10 +34,10 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-6">Legal</h3>
             <div className="space-y-4">
-              <Link href="/terms" className="block text-gray-300 hover:text-white transition-colors">
+              <Link href="/terms-and-conditions" className="block text-gray-300 hover:text-white transition-colors">
                 Terms & Conditions
               </Link>
-              <Link href="/privacy" className="block text-gray-300 hover:text-white transition-colors">
+              <Link href="/privacy-policy" className="block text-gray-300 hover:text-white transition-colors">
                 Privacy Policy
               </Link>
             </div>
