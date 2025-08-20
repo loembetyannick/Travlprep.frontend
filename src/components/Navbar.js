@@ -55,8 +55,10 @@ export default function Navbar() {
 
           {/* App Store Button - Desktop only */}
           <div className="hidden md:flex items-center">
-            <Link 
-              href="#" 
+            <a 
+              href="https://apps.apple.com/gb/app/travlprep-travel-planner/id6670488133" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center hover:opacity-80 transition-opacity duration-200"
             >
               <Image
@@ -66,7 +68,7 @@ export default function Navbar() {
                 height={36}
                 className="h-9 w-auto"
               />
-            </Link>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -122,8 +124,10 @@ export default function Navbar() {
             
             {/* App Store Button in Mobile Menu */}
             <div className="px-3 py-4 border-t border-gray-300 mt-3">
-              <Link 
-                href="#" 
+              <a 
+                href="https://apps.apple.com/gb/app/travlprep-travel-planner/id6670488133" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex justify-start hover:opacity-80 transition-opacity duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
@@ -134,7 +138,7 @@ export default function Navbar() {
                   height={36}
                   className="h-9 w-auto"
                 />
-              </Link>
+              </a>
             </div>
           </div>
         </div>

@@ -42,7 +42,9 @@ export default function HeroSection() {
           {/* App Store Button */}
           <div className="pt-4 flex justify-center lg:justify-start">
             <a 
-              href="#" 
+              href="https://apps.apple.com/gb/app/travlprep-travel-planner/id6670488133" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block hover:opacity-80 transition-opacity duration-200"
             >
               <Image

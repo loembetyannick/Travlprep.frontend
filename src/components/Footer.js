@@ -61,7 +61,12 @@ export default function Footer() {
             {/* Left Side - App Store and Rating */}
             <div className="flex flex-col space-y-4">
               {/* App Store Button */}
-              <Link href="#" className="inline-block hover:opacity-80 transition-opacity">
+              <a 
+                href="https://apps.apple.com/gb/app/travlprep-travel-planner/id6670488133" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block hover:opacity-80 transition-opacity"
+              >
                 <Image
                   src="/appstore-icon.png"
                   alt="Download on App Store"
@@ -69,7 +74,7 @@ export default function Footer() {
                   height={45}
                   className="h-12 w-auto"
                 />
-              </Link>
+              </a>
               
               {/* Star Rating */}
               <div className="flex items-center space-x-2">
