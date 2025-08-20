@@ -18,7 +18,7 @@ export default function InfoSection() {
       id: 2,
       icon: '🤝',
       title: 'Collaborate with Your Friend',
-      description: 'Share trips with friends and family in real-time. Everyone can add activities, update to-dos, and contribute to the planning process seamlessly.',
+      description: 'Share trips with friends and family in real-time. Everyone can add activities and contribute to the planning process seamlessly.',
       image: '/info-img2.png'
     },
     {
