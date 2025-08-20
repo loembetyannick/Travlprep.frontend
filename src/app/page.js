@@ -9,11 +9,14 @@ import InfoSection from '../components/InfoSection';
 import ReasonsSection from '../components/ReasonsSection';
 import RatingSection from '../components/RatingSection';
 import Footer from '../components/Footer';
+import { API_ENDPOINTS } from '../config/api';
 
 export default function Home() {
   const [showEmailModal, setShowEmailModal] = useState(false);
   const [modalVisible, setModalVisible] = useState(false);
   const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState('');
 
   useEffect(() => {
     // Check if the modal has been shown before
@@ -39,15 +42,49 @@ export default function Home() {
     }, 300);
   };
 
-  const handleGetFreeTrial = (e) => {
+  const handleGetFreeTrial = async (e) => {
     e.preventDefault();
     if (!email.trim()) return; // Don't proceed if email is empty
     
-    // Redirect to App Store
-    window.open('https://apps.apple.com/gb/app/travlprep-travel-planner/id6670488133', '_blank');
+    setIsSubmitting(true);
+    setSubmitMessage('');
     
-    // Close modal and remember it was seen
-    handleCloseModal();
+    try {
+      // First, call the API to subscribe the email
+      const response = await fetch(API_ENDPOINTS.EMAIL_SUBSCRIPTION, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: email.trim()
+        }),
+      });
+
+      if (response.ok) {
+        setSubmitMessage('Successfully subscribed! Redirecting to App Store...');
+        console.log('Email subscribed successfully!');
+      } else {
+        const errorData = await response.json().catch(() => ({ error: 'Unknown error' }));
+        setSubmitMessage(`Subscription failed: ${errorData.error || 'Unknown error'}. Redirecting to App Store...`);
+        console.error('Failed to subscribe email:', errorData.error);
+      }
+      
+      // Short delay to show the message before redirecting
+      await new Promise(resolve => setTimeout(resolve, 1500));
+      
+    } catch (error) {
+      console.error('Error subscribing email:', error);
+      setSubmitMessage('Network error. Redirecting to App Store...');
+      await new Promise(resolve => setTimeout(resolve, 1500));
+    } finally {
+      // Redirect to App Store regardless of subscription result
+      window.open('https://apps.apple.com/gb/app/travlprep-travel-planner/id6670488133', '_blank');
+      
+      // Close modal and remember it was seen
+      setIsSubmitting(false);
+      handleCloseModal();
+    }
   };
 
   return (
@@ -138,17 +175,24 @@ export default function Home() {
                   . No commitment. Cancel anytime.
                 </p>
 
+                {/* Submit Message */}
+                {submitMessage && (
+                  <p className="text-sm text-center text-gray-600 mb-2">
+                    {submitMessage}
+                  </p>
+                )}
+
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  disabled={!email.trim()}
+                  disabled={!email.trim() || isSubmitting}
                   className={`w-full py-3 rounded-lg font-semibold transition-all duration-200 ${
-                    email.trim() 
+                    email.trim() && !isSubmitting
                       ? 'bg-black text-white hover:bg-gray-800 cursor-pointer' 
                       : 'bg-gray-300 text-gray-500 cursor-not-allowed'
                   }`}
                 >
-                  Claim My Free Trial
+                  {isSubmitting ? 'Processing...' : 'Claim My Free Trial'}
                 </button>
               </form>
             </div>
