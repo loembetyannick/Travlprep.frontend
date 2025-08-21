@@ -65,7 +65,7 @@ export default function Footer() {
               <FontAwesomeIcon icon={faTiktok} className="h-8 w-8" />
             </a>
             <a 
-              href="https://youtube.com/travlprep" 
+              href="https://youtube.com/@travlprep?si=bocKiOxfi8Seyuez" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-300 transition-colors"
