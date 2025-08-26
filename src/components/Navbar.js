@@ -45,6 +45,12 @@ export default function Navbar() {
                 Press
               </a>
               <a 
+                href="mailto:support@travlprep.com?subject=Feedback"
+                className="text-gray-700 hover:text-black px-3 py-2 text-sm font-medium transition-colors duration-200"
+              >
+                Feedback
+              </a>
+              <a 
                 href="#info-section"
                 onClick={(e) => {
                   e.preventDefault();
@@ -120,6 +126,13 @@ export default function Navbar() {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Press
+            </a>
+            <a 
+              href="mailto:support@travlprep.com?subject=Feedback"
+              className="text-gray-700 hover:text-black block px-3 py-2 text-base font-medium transition-colors duration-200"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Feedback
             </a>
             <a 
               href="#info-section"
