@@ -25,35 +25,24 @@ export default function HeroSection() {
           {/* Main Heading */}
           <div className="space-y-4">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              Your Travel life<br />
-              perfectly organized!
+              Plan and Relive Moments
+              that matter
             </h1>
             
             {/* Description */}
-            <p className="text-lg text-gray-600 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              Plan, organize, and share your perfect trip with friends. Create 
-              collaborative travel itineraries, manage packing lists, 
-              track activities, store memories in your trip gallery, and keep 
-              everyone on the same page. From solo adventures to group 
-              getaways, make every journey stress-free and unforgettable.
-            </p>
+            <p className="text-lg text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0">
+            Pin and plan the moments that matter most. Stay organized, add plans, create meaningful itineraries, and relive your experiences, on your own or with others, all in one place. Save memories so you can revisit them anytime.</p>
           </div>
 
-          {/* App Store Button */}
+          {/* Try for Free Button */}
           <div className="pt-4 flex justify-center lg:justify-start">
             <a 
               href="https://apps.apple.com/gb/app/travlprep-travel-planner/id6670488133" 
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block hover:opacity-80 transition-opacity duration-200"
+              className="inline-block bg-white text-black font-semibold px-8 py-4 rounded-full hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl"
             >
-              <Image
-                src="/appstore-icon.png"
-                alt="Download on App Store"
-                width={200}
-                height={60}
-                className="h-14 w-auto"
-              />
+              Download
             </a>
           </div>
         </div>

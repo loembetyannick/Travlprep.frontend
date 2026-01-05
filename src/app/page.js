@@ -4,10 +4,6 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
-import CommunitySection from '../components/CommunitySection';
-import InfoSection from '../components/InfoSection';
-import ReasonsSection from '../components/ReasonsSection';
-import RatingSection from '../components/RatingSection';
 import Footer from '../components/Footer';
 import { API_ENDPOINTS } from '../config/api';
 
@@ -88,14 +84,10 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div className="bg-white">
       <Navbar />
-      <main className="min-h-screen bg-white">
+      <main className="min-h-screen">
         <HeroSection />
-        <CommunitySection />
-        <InfoSection />
-        <ReasonsSection />
-        <RatingSection />
       </main>
       <Footer />
 

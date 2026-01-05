@@ -21,11 +21,11 @@ export default function ReasonsSection() {
   ];
 
   return (
-    <section className="w-full py-16 lg:py-24 bg-white">
+    <section className="w-full py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light text-gray-900 mb-4">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light text-white mb-4">
             Why Choose Travlprep?
           </h2>
         </div>
@@ -33,19 +33,19 @@ export default function ReasonsSection() {
         {/* Reasons Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {reasons.map((reason) => (
-            <div key={reason.id} className="bg-gray-50 rounded-2xl p-8 text-center">
+            <div key={reason.id} className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center border border-white/20 hover:border-white/30 hover:bg-white/15 transition-all duration-300">
               {/* Icon */}
               <div className="text-4xl mb-6">
                 {reason.icon}
               </div>
               
               {/* Title */}
-              <h3 className="text-xl font-bold text-gray-900 mb-4 leading-tight">
+              <h3 className="text-xl font-bold text-white mb-4 leading-tight">
                 {reason.title}
               </h3>
               
               {/* Description */}
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-300 leading-relaxed">
                 {reason.description}
               </p>
             </div>

@@ -25,7 +25,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="block text-gray-300 hover:text-white transition-colors"
               >
-                Download Travlprep
+                Download
               </a>
             </div>
           </div>
