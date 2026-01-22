@@ -13,14 +13,14 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-6">Company</h3>
             <div className="space-y-4">
-              <a href="mailto:support@travlprep.com" className="block text-gray-300 hover:text-white transition-colors">
+              <a href="mailto:support@maindays.app" className="block text-gray-300 hover:text-white transition-colors">
                 Press
               </a>
-              <a href="mailto:support@travlprep.com" className="block text-gray-300 hover:text-white transition-colors">
+              <a href="mailto:support@maindays.app" className="block text-gray-300 hover:text-white transition-colors">
                 Email
               </a>
               <a 
-                href="https://apps.apple.com/gb/app/travlprep-travel-planner/id6670488133" 
+                href="https://apps.apple.com/gb/app/maindays-travel-planner/id6670488133" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block text-gray-300 hover:text-white transition-colors"
@@ -49,7 +49,7 @@ export default function Footer() {
           {/* Social Media Icons */}
           <div className="flex justify-start md:justify-end space-x-6">
             <a 
-              href="https://www.instagram.com/travlprep/" 
+              href="https://www.instagram.com/maindays/" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-300 transition-colors"
@@ -57,7 +57,7 @@ export default function Footer() {
               <FontAwesomeIcon icon={faInstagram} className="h-8 w-8" />
             </a>
             <a 
-              href="https://www.tiktok.com/@travlprep" 
+              href="https://www.tiktok.com/@maindays" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-300 transition-colors"
@@ -65,7 +65,7 @@ export default function Footer() {
               <FontAwesomeIcon icon={faTiktok} className="h-8 w-8" />
             </a>
             <a 
-              href="https://youtube.com/@travlprep?si=bocKiOxfi8Seyuez" 
+              href="https://youtube.com/@maindays?si=bocKiOxfi8Seyuez" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-gray-300 transition-colors"
@@ -82,7 +82,7 @@ export default function Footer() {
             <div className="flex flex-col space-y-4">
               {/* App Store Button */}
               <a 
-                href="https://apps.apple.com/gb/app/travlprep-travel-planner/id6670488133" 
+                href="https://apps.apple.com/gb/app/maindays-travel-planner/id6670488133" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block hover:opacity-80 transition-opacity"

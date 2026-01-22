@@ -5,7 +5,7 @@ export default function RatingSection() {
     <section className="w-full py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <a 
-          href="https://apps.apple.com/gb/app/travlprep-travel-planner/id6670488133" 
+          href="https://apps.apple.com/gb/app/maindays-travel-planner/id6670488133" 
           target="_blank"
           rel="noopener noreferrer"
           className="block hover:opacity-80 transition-opacity duration-300"

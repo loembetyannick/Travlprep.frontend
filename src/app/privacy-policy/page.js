@@ -14,10 +14,10 @@ export default function PrivacyPolicy() {
             <section className="mb-8">
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Introduction</h2>
               <p className="text-gray-700 mb-4">
-                Outmade Ltd (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Travlprep mobile application and web services (&quot;App&quot;).
+                Outmade Ltd (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Maindays mobile application and web services (&quot;App&quot;).
               </p>
               <p className="text-gray-700 mb-4">
-                Travlprep is a collaborative travel planning platform that helps you organize trips, share itineraries with friends and family, manage packing lists, store travel photos, and keep all your travel information in one organized place.
+                Maindays is a collaborative travel planning platform that helps you organize trips, share itineraries with friends and family, manage packing lists, store travel photos, and keep all your travel information in one organized place.
               </p>
             </section>
 
@@ -79,7 +79,7 @@ export default function PrivacyPolicy() {
               </ul>
 
               <p className="text-gray-700 mb-4">
-                To exercise these rights, please contact us at support@travlprep.com or use the data export and account deletion features within the app.
+                To exercise these rights, please contact us at support@maindays.app or use the data export and account deletion features within the app.
               </p>
             </section>
 
@@ -107,7 +107,7 @@ export default function PrivacyPolicy() {
               </p>
               <div className="text-gray-700">
                 <p className="mb-2"><strong>Outmade Ltd</strong></p>
-                <p className="mb-2">Email: <a href="mailto:support@travlprep.com" className="text-blue-600 hover:text-blue-800">support@travlprep.com</a></p>
+                <p className="mb-2">Email: <a href="mailto:support@maindays.app" className="text-blue-600 hover:text-blue-800">support@maindays.app</a></p>
                 <p className="mb-2">App: Use the &quot;Account&quot; section for data export and deletion</p>
               </div>
             </section>

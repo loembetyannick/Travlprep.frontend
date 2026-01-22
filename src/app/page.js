@@ -16,7 +16,7 @@ export default function Home() {
 
   useEffect(() => {
     // Check if the modal has been shown before
-    const hasSeenModal = localStorage.getItem('travlprep-email-modal-seen');
+    const hasSeenModal = localStorage.getItem('maindays-email-modal-seen');
     if (!hasSeenModal) {
       // Show modal after a short delay for better UX
       const timer = setTimeout(() => {
@@ -34,7 +34,7 @@ export default function Home() {
     setTimeout(() => {
       setShowEmailModal(false);
       // Remember that user has seen the modal
-      localStorage.setItem('travlprep-email-modal-seen', 'true');
+      localStorage.setItem('maindays-email-modal-seen', 'true');
     }, 300);
   };
 
@@ -75,7 +75,7 @@ export default function Home() {
       await new Promise(resolve => setTimeout(resolve, 1500));
     } finally {
       // Redirect to App Store regardless of subscription result
-      window.open('https://apps.apple.com/gb/app/travlprep-travel-planner/id6670488133', '_blank');
+      window.open('https://apps.apple.com/gb/app/maindays-travel-planner/id6670488133', '_blank');
       
       // Close modal and remember it was seen
       setIsSubmitting(false);
@@ -117,7 +117,7 @@ export default function Home() {
               <div className="mb-6">
                 <Image
                   src="/logo-title.png"
-                  alt="Travlprep"
+                  alt="Maindays"
                   width={180}
                   height={40}
                   className="h-8 w-auto mx-auto"
@@ -128,7 +128,7 @@ export default function Home() {
               <div className="mb-6">
                 <Image
                   src="/main-img.png"
-                  alt="Travlprep App"
+                  alt="Maindays App"
                   width={300}
                   height={200}
                   className="w-full max-w-xs mx-auto rounded-lg"

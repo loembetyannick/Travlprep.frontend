@@ -45,7 +45,7 @@ export default function InfoSection() {
         {/* Section Title */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light text-white mb-4">
-            What can you do with the Travlprep? 🤔
+            What can you do with Maindays? 🤔
           </h2>
         </div>
 
@@ -92,7 +92,7 @@ export default function InfoSection() {
             <div className="relative">
               <Image
                 src={currentFeature.image}
-                alt={`${currentFeature.title} - Travlprep App Interface`}
+                alt={`${currentFeature.title} - Maindays App Interface`}
                 width={400}
                 height={600}
                 className="w-full max-w-sm h-auto shadow-2xl rounded-lg transition-all duration-300"

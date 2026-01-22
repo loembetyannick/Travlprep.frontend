@@ -20,7 +20,7 @@ export default function Navbar() {
             <Link href="/" className="flex items-center">
               <Image
                 src="/logo-title.png"
-                alt="Travlprep"
+                alt="Maindays"
                 width={180}
                 height={40}
                 className="h-8 w-auto"
@@ -39,13 +39,13 @@ export default function Navbar() {
                 Home
               </Link>
               <a 
-                href="mailto:support@travlprep.com"
+                href="mailto:support@maindays.app"
                 className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors duration-200"
               >
                 Press
               </a>
               <a 
-                href="mailto:support@travlprep.com?subject=Feedback"
+                href="mailto:support@maindays.app?subject=Feedback"
                 className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors duration-200"
               >
                 Feedback
@@ -56,7 +56,7 @@ export default function Navbar() {
           {/* Try for Free Button - Desktop only */}
           <div className="hidden md:flex items-center">
             <a 
-              href="https://apps.apple.com/gb/app/travlprep-travel-planner/id6670488133" 
+              href="https://apps.apple.com/gb/app/maindays-travel-planner/id6670488133" 
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-black font-semibold px-6 py-2.5 rounded-full hover:bg-gray-100 transition-all duration-200 text-sm shadow-lg hover:shadow-xl"
@@ -102,14 +102,14 @@ export default function Navbar() {
               Home
             </Link>
             <a 
-              href="mailto:support@travlprep.com"
+              href="mailto:support@maindays.app"
               className="text-gray-700 hover:text-gray-900 block px-3 py-2 text-base font-medium transition-colors duration-200"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Press
             </a>
             <a 
-              href="mailto:support@travlprep.com?subject=Feedback"
+              href="mailto:support@maindays.app?subject=Feedback"
               className="text-gray-700 hover:text-gray-900 block px-3 py-2 text-base font-medium transition-colors duration-200"
               onClick={() => setIsMobileMenuOpen(false)}
             >
@@ -119,7 +119,7 @@ export default function Navbar() {
             {/* Try for Free Button in Mobile Menu */}
             <div className="px-3 py-4 border-t border-gray-200 mt-3">
               <a 
-                href="https://apps.apple.com/gb/app/travlprep-travel-planner/id6670488133" 
+                href="https://apps.apple.com/gb/app/maindays-travel-planner/id6670488133" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block bg-white text-black font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition-all duration-200 text-center shadow-lg"
