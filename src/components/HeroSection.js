@@ -37,7 +37,7 @@ export default function HeroSection() {
           {/* Try for Free Button */}
           <div className="pt-4 flex justify-center lg:justify-start">
             <a 
-              href="https://apps.apple.com/gb/app/maindays-travel-planner/id6670488133" 
+              href="https://apps.apple.com/gb/app/lifemade-travel-planner/id6670488133" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-white text-black font-semibold px-8 py-4 rounded-full hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl"
@@ -52,7 +52,7 @@ export default function HeroSection() {
           <div className="relative">
             <Image
               src="/main-img.png"
-              alt="Maindays App Screenshots"
+              alt="Lifemade App Screenshots"
               width={700}
               height={580}
               className="w-full max-w-xl h-auto"

@@ -4,19 +4,19 @@ export default function ReasonsSection() {
       id: 1,
       icon: '✈️',
       title: 'All-in-one travel companion',
-      description: 'From itineraries to photo galleries, Maindays handles every aspect of your trip. No more switching between multiple apps or losing important details in group chats.'
+      description: 'From itineraries to photo galleries, Lifemade handles every aspect of your trip. No more switching between multiple apps or losing important details in group chats.'
     },
     {
       id: 2,
       icon: '🎯',
       title: 'Organized by design, not by chance',
-      description: 'From weekend trips with friends to family vacations, Maindays keeps everyone on the same page and say goodbye to endless group chat confusion.'
+      description: 'From weekend trips with friends to family vacations, Lifemade keeps everyone on the same page and say goodbye to endless group chat confusion.'
     },
     {
       id: 3,
       icon: '🤝',
       title: 'Travel together, stress-free',
-      description: 'From weekend trips with friends to family vacations, Maindays keeps everyone on the same page and say goodbye to endless group chat confusion.'
+      description: 'From weekend trips with friends to family vacations, Lifemade keeps everyone on the same page and say goodbye to endless group chat confusion.'
     }
   ];
 
@@ -26,7 +26,7 @@ export default function ReasonsSection() {
         {/* Section Title */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light text-white mb-4">
-            Why Choose Maindays?
+            Why Choose Lifemade?
           </h2>
         </div>
 
