@@ -8,15 +8,15 @@ export default function ReasonsSection() {
     },
     {
       icon: '📍',
-      title: 'Plan, capture, and relive — all in one place',
+      title: 'Plan, capture, and relive. All in one place.',
       description:
-        "Lifemade is the only app that connects every part of your experience. Plan before, capture during, and relive after — so nothing gets lost.",
+        'Lifemade is the only app that connects every part of your experience. Plan before, capture during, and relive after, so nothing gets lost.',
     },
     {
       icon: '✨',
       title: 'Your life, beautifully kept',
       description:
-        "Lifemade isn't just a planning app or a photo app. It's a record of the life you're actually living — organised, visual, and always there when you want to look back.",
+        'Lifemade is not just a planning app or a photo app. It is a record of the life you are actually living. Organised, visual, and always there when you want to look back.',
     },
   ];
 

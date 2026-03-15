@@ -25,25 +25,54 @@ export default function InfoSection() {
         What does Lifemade include?
       </h2>
 
-      <div className="max-w-md mx-auto relative">
-        {/* Left Arrow */}
+      {/* Desktop: 3 on first row, 2 centered on second row */}
+      <div className="hidden lg:block max-w-6xl mx-auto">
+        <div className="grid grid-cols-3 gap-6">
+          {features.slice(0, 3).map((feature, i) => (
+            <div key={i} className="flex justify-center">
+              <Image
+                src={feature.image}
+                alt={feature.alt}
+                width={320}
+                height={640}
+                className="w-full h-auto object-contain rounded-2xl"
+              />
+            </div>
+          ))}
+        </div>
+        <div className="grid grid-cols-2 gap-6 mt-6 max-w-[680px] mx-auto">
+          {features.slice(3).map((feature, i) => (
+            <div key={i} className="flex justify-center">
+              <Image
+                src={feature.image}
+                alt={feature.alt}
+                width={320}
+                height={640}
+                className="w-full h-auto object-contain rounded-2xl"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Mobile: carousel with dots */}
+      <div className="lg:hidden max-w-sm mx-auto relative">
         <button
           onClick={goPrev}
-          className="absolute left-[-60px] top-1/2 -translate-y-1/2 z-10 hidden lg:flex w-12 h-12 items-center justify-center rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
+          className="absolute left-[-16px] top-1/2 -translate-y-1/2 z-10 flex w-10 h-10 items-center justify-center rounded-full bg-white shadow-lg"
           aria-label="Previous feature"
         >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </button>
 
-        {/* Right Arrow */}
         <button
           onClick={goNext}
-          className="absolute right-[-60px] top-1/2 -translate-y-1/2 z-10 hidden lg:flex w-12 h-12 items-center justify-center rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
+          className="absolute right-[-16px] top-1/2 -translate-y-1/2 z-10 flex w-10 h-10 items-center justify-center rounded-full bg-white shadow-lg"
           aria-label="Next feature"
         >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </button>
@@ -58,7 +87,6 @@ export default function InfoSection() {
           />
         </div>
 
-        {/* Dots */}
         <div className="flex justify-center space-x-2 mt-6">
           {features.map((_, i) => (
             <button
