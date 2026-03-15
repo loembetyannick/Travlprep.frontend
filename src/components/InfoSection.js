@@ -3,109 +3,75 @@
 import Image from 'next/image';
 import { useState } from 'react';
 
+const features = [
+  { image: '/feature-create-plans.png', alt: 'Create Your Plans' },
+  { image: '/feature-upcoming-plans.png', alt: 'Add Upcoming Plans' },
+  { image: '/feature-itinerary.png', alt: 'Build Your Itinerary' },
+  { image: '/feature-map.png', alt: 'Design Your Moment' },
+  { image: '/feature-relive.png', alt: 'Relive Your Moment' },
+];
+
 export default function InfoSection() {
-  const [selectedFeature, setSelectedFeature] = useState(1);
+  const [activeIndex, setActiveIndex] = useState(0);
 
-  const features = [
-    {
-      id: 1,
-      icon: '📝',
-      title: 'Plan Your Perfect Trip in Minutes',
-      description: 'Create detailed itineraries with activities, schedules, and locations. Add notes, links, and budgets to keep everything organized in one place.',
-      image: '/info-img1.png'
-    },
-    {
-      id: 2,
-      icon: '🤝',
-      title: 'Collaborate with Your Friend',
-      description: 'Share trips with friends and family in real-time. Everyone can add activities and contribute to the planning process seamlessly.',
-      image: '/info-img2.png'
-    },
-    {
-      id: 3,
-      icon: '📸',
-      title: 'Capture and Organize Trip Memories',
-      description: 'Galleries automatically stores all your travel photos organized by trips. Create a visual diary of your adventures that\'s easy to share and revisit.',
-      image: '/info-img3.png'
-    },
-    {
-      id: 4,
-      icon: '🔍',
-      title: 'Discover Tools to Perfect Your Trip',
-      description: 'Find the best tools to make your trip perfect. From travel attachments to currency converters, we\'ve got you covered.',
-      image: '/info-img4.png'
-    }
-  ];
-
-  const currentFeature = features.find(f => f.id === selectedFeature);
+  const goNext = () =>
+    setActiveIndex((prev) => (prev + 1) % features.length);
+  const goPrev = () =>
+    setActiveIndex((prev) => (prev - 1 + features.length) % features.length);
 
   return (
-    <section id="info-section" className="w-full py-16 lg:py-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Title */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light text-white mb-4">
-            What can you do with Lifemade? 🤔
-          </h2>
+    <section className="py-16 lg:py-24 px-4">
+      <h2 className="text-center text-4xl mt-36 lg:text-[48px] font-medium mb-12 lg:mb-16">
+        What does Lifemade include?
+      </h2>
+
+      <div className="max-w-md mx-auto relative">
+        {/* Left Arrow */}
+        <button
+          onClick={goPrev}
+          className="absolute left-[-60px] top-1/2 -translate-y-1/2 z-10 hidden lg:flex w-12 h-12 items-center justify-center rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
+          aria-label="Previous feature"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </button>
+
+        {/* Right Arrow */}
+        <button
+          onClick={goNext}
+          className="absolute right-[-60px] top-1/2 -translate-y-1/2 z-10 hidden lg:flex w-12 h-12 items-center justify-center rounded-full bg-white shadow-lg hover:bg-gray-100 transition-colors"
+          aria-label="Next feature"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </button>
+
+        <div className="overflow-hidden rounded-3xl">
+          <Image
+            src={features[activeIndex].image}
+            alt={features[activeIndex].alt}
+            width={400}
+            height={800}
+            className="w-full h-auto object-contain mx-auto transition-opacity duration-300 ease-in-out"
+          />
         </div>
 
-        {/* Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
-          {/* Features List - Shows first on mobile, second on desktop */}
-          <div className="space-y-8 order-2 lg:order-2">
-            {features.map((feature) => (
-              <div 
-                key={feature.id} 
-                className={`flex items-start space-x-6 p-6 rounded-2xl cursor-pointer transition-all duration-300 ${
-                  selectedFeature === feature.id 
-                    ? 'bg-white/15 backdrop-blur-sm border border-white/30 shadow-xl' 
-                    : 'bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/20'
-                }`}
-                onClick={() => setSelectedFeature(feature.id)}
-              >
-                {/* Icon */}
-                <div className="flex-shrink-0">
-                  <div className="w-16 h-16 rounded-xl flex items-center justify-center text-3xl">
-                    {feature.icon}
-                  </div>
-                </div>
-                
-                {/* Content */}
-                <div className="flex-1">
-                  <h3 className={`text-2xl font-bold mb-3 transition-colors duration-300 ${
-                    selectedFeature === feature.id ? 'text-white' : 'text-gray-200'
-                  }`}>
-                    {feature.title}
-                  </h3>
-                  <p className={`text-lg leading-relaxed transition-colors duration-300 ${
-                    selectedFeature === feature.id ? 'text-gray-300' : 'text-gray-400'
-                  }`}>
-                    {feature.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Phone Mockup - Shows second on mobile, first on desktop */}
-          <div className="flex justify-center lg:justify-start order-1 lg:order-1">
-            <div className="relative">
-              <Image
-                src={currentFeature.image}
-                alt={`${currentFeature.title} - Lifemade App Interface`}
-                width={400}
-                height={600}
-                className="w-full max-w-sm h-auto shadow-2xl rounded-lg transition-all duration-300"
-                priority
-                style={{
-                  filter: 'drop-shadow(0 25px 50px rgba(0, 0, 0, 0.3))',
-                  borderRadius: '30px',
-                }}
-              />
-            </div>
-          </div>
+        {/* Dots */}
+        <div className="flex justify-center space-x-2 mt-6">
+          {features.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setActiveIndex(i)}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                i === activeIndex ? 'bg-gray-800' : 'bg-gray-300'
+              }`}
+              aria-label={`Go to feature: ${features[i].alt}`}
+            />
+          ))}
         </div>
       </div>
     </section>
   );
-} 
+}

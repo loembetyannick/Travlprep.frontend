@@ -1,66 +1,68 @@
 import Image from 'next/image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 export default function HeroSection() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        {/* Left Content */}
-        <div className="space-y-8 text-center lg:text-left">
-          {/* 5 Star Rating */}
-          <div className="flex items-center justify-center lg:justify-start space-x-2">
-            <div className="flex space-x-1">
-              {[...Array(5)].map((_, i) => (
-                <FontAwesomeIcon 
-                  key={i}
-                  icon={faStar} 
-                  className="h-6 w-6 text-black"
-                />
-              ))}
-            </div>
-            <span className="text-2xl font-bold text-gray-900">5.0</span>
+    <main className="grid grid-cols-1 lg:grid-cols-2 mt-6 sm:mt-10 items-center max-w-screen-xl mx-auto">
+      <div className="flex flex-col gap-5 sm:gap-4 px-6 sm:px-8 lg:px-0 lg:w-fit lg:mx-auto">
+        {/* Social Proof Pill */}
+        <div className="flex items-center h-[42.5px] border border-[#c6c6c68f] rounded-full p-1.5 pr-3 text-xs gap-2 w-fit">
+          <div className="flex -space-x-3">
+            <Image src="/ellipse-1.png" alt="User 1" width={38} height={38} className="rounded-full object-cover border-2 border-white z-30" />
+            <Image src="/ellipse-2.png" alt="User 2" width={38} height={38} className="rounded-full object-cover border-2 border-white z-20" />
+            <Image src="/ellipse-3.png" alt="User 3" width={38} height={38} className="rounded-full object-cover border-2 border-white z-10" />
           </div>
-
-          {/* Main Heading */}
-          <div className="space-y-4">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              Plan and Relive Moments
-              that matter
-            </h1>
-            
-            {/* Description */}
-            <p className="text-lg text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0">
-            Pin and plan the moments that matter most. Stay organized, add plans, create meaningful itineraries, and relive your experiences, on your own or with others, all in one place. Save memories so you can revisit them anytime.</p>
-          </div>
-
-          {/* Try for Free Button */}
-          <div className="pt-4 flex justify-center lg:justify-start">
-            <a 
-              href="https://apps.apple.com/gb/app/lifemade-travel-planner/id6670488133" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-white text-black font-semibold px-8 py-4 rounded-full hover:bg-gray-100 transition-all duration-200 shadow-lg hover:shadow-xl"
-            >
-              Download
-            </a>
+          <div className="font-medium sm:text-sm text-xs">
+            Loved by users with ⭐ 5.0 rating
           </div>
         </div>
 
-        {/* Right Content - Phone Mockup */}
-        <div className="flex justify-center lg:justify-end">
-          <div className="relative">
+        {/* Main Heading */}
+        <h1 className="text-[36px] sm:text-[44px] lg:text-[52px] font-bold leading-tight">
+          Meet Lifemade<br />
+          <span className="font-medium">
+            Plan, Capture<br />
+            and Relive Moments
+          </span>
+        </h1>
+
+        {/* Description */}
+        <p className="opacity-60 text-sm sm:text-base font-normal max-w-[510px]">
+          The only app that connects every part of your experience. Planning
+          before, capturing during, and reliving after. Drop pins on a map,
+          build itineraries, and watch your photos organise themselves. Your
+          best moments deserve more than a folder you never open.
+        </p>
+
+        {/* App Store Badge */}
+        <div className="flex sm:flex-row flex-col gap-4 mt-2">
+          <a
+            href="https://apps.apple.com/gb/app/lifemade-travel-planner/id6670488133"
+            className="block"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Image
-              src="/main-img.png"
-              alt="Lifemade App Screenshots"
-              width={700}
-              height={580}
-              className="w-full max-w-xl h-auto"
-              priority
+              src="/appstore-icon.png"
+              alt="Download on App Store"
+              width={162}
+              height={49}
+              className="h-[49px] w-auto hover:opacity-80 transition-opacity"
             />
-          </div>
+          </a>
         </div>
       </div>
-    </div>
+
+      {/* Right Content - Hero Image */}
+      <div className="overflow-hidden sm:overflow-visible mx-auto mt-10 sm:mt-0 pb-20 sm:pb-0">
+        <Image
+          src="/main-img.png"
+          alt="Lifemade App Screenshots"
+          width={700}
+          height={700}
+          className="w-auto max-h-[500px] sm:max-h-[700px] object-contain"
+          priority
+        />
+      </div>
+    </main>
   );
-} 
+}

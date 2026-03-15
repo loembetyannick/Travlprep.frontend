@@ -1,123 +1,112 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faYoutube, faTiktok } from '@fortawesome/free-brands-svg-icons';
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Company Section */}
-          <div>
-            <h3 className="text-lg font-semibold mb-6">Company</h3>
-            <div className="space-y-4">
-              <a href="mailto:support@lifemade.app" className="block text-gray-300 hover:text-white transition-colors">
-                Press
-              </a>
-              <a href="mailto:support@lifemade.app" className="block text-gray-300 hover:text-white transition-colors">
-                Email
-              </a>
-              <a 
-                href="https://apps.apple.com/gb/app/lifemade-travel-planner/id6670488133" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-gray-300 hover:text-white transition-colors"
-              >
-                Download
-              </a>
-            </div>
+    <footer className="pt-7">
+      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Left Section: Logo + App Store Badge */}
+        <div className="flex flex-col gap-4">
+          <div className="flex items-center gap-2">
+            <Image
+              src="/logo-title.png"
+              alt="Lifemade"
+              width={120}
+              height={36}
+              className="h-8 w-auto"
+            />
           </div>
-
-          {/* Legal Section */}
-          <div>
-            <h3 className="text-lg font-semibold mb-6">Legal</h3>
-            <div className="space-y-4">
-              <Link href="/terms-and-conditions" className="block text-gray-300 hover:text-white transition-colors">
-                Terms & Conditions
-              </Link>
-              <Link href="/privacy-policy" className="block text-gray-300 hover:text-white transition-colors">
-                Privacy Policy
-              </Link>
-            </div>
-          </div>
-
-          {/* Empty Column for Spacing */}
-          <div className="hidden md:block"></div>
-
-          {/* Social Media Icons */}
-          <div className="flex justify-start md:justify-end space-x-6">
-            <a 
-              href="https://www.instagram.com/lifemade/" 
+          <p className="text-sm text-gray-600 mt-2">Download Lifemade</p>
+          <div className="flex flex-col lg:flex-row gap-2">
+            <a
+              href="https://apps.apple.com/gb/app/lifemade-travel-planner/id6670488133"
+              className="block"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-gray-300 transition-colors"
             >
-              <FontAwesomeIcon icon={faInstagram} className="h-8 w-8" />
-            </a>
-            <a 
-              href="https://www.tiktok.com/@lifemade" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-gray-300 transition-colors"
-            >
-              <FontAwesomeIcon icon={faTiktok} className="h-8 w-8" />
-            </a>
-            <a 
-              href="https://youtube.com/@lifemade?si=bocKiOxfi8Seyuez" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-gray-300 transition-colors"
-            >
-              <FontAwesomeIcon icon={faYoutube} className="h-8 w-8" />
+              <Image
+                src="/appstore-icon.png"
+                alt="Download on App Store"
+                width={135}
+                height={40}
+                className="h-10 w-auto hover:opacity-80 transition-opacity"
+              />
             </a>
           </div>
         </div>
 
-        {/* Bottom Section */}
-        <div className="mt-12 pt-8 border-t border-gray-800">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
-            {/* Left Side - App Store and Rating */}
-            <div className="flex flex-col space-y-4">
-              {/* App Store Button */}
-              <a 
-                href="https://apps.apple.com/gb/app/lifemade-travel-planner/id6670488133" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block hover:opacity-80 transition-opacity"
-              >
-                <Image
-                  src="/appstore-icon.png"
-                  alt="Download on App Store"
-                  width={150}
-                  height={45}
-                  className="h-12 w-auto"
-                />
-              </a>
-              
-              {/* Star Rating */}
-              <div className="flex items-center space-x-2">
-                <div className="flex space-x-1">
-                  {[...Array(5)].map((_, i) => (
-                    <FontAwesomeIcon 
-                      key={i}
-                      icon={faStar} 
-                      className="h-5 w-5 text-white"
-                    />
-                  ))}
-                </div>
-                <span className="text-lg font-semibold text-white">5.0</span>
-              </div>
-            </div>
+        {/* Legal Links */}
+        <div>
+          <h3 className="text-base font-semibold text-black mb-4">Legal</h3>
+          <ul className="space-y-2">
+            <li>
+              <Link href="/privacy-policy" className="text-sm text-gray-600 hover:text-black transition-colors">
+                Privacy Policy
+              </Link>
+            </li>
+            <li>
+              <Link href="/terms-and-conditions" className="text-sm text-gray-600 hover:text-black transition-colors">
+                Terms & Conditions
+              </Link>
+            </li>
+          </ul>
+        </div>
 
-            {/* Right Side - Copyright */}
-            <div className="text-gray-400 text-sm">
-              © Copyright 2025, All rights reserved
-            </div>
-          </div>
+        {/* Company Links */}
+        <div>
+          <h3 className="text-base font-semibold text-black mb-4">Company</h3>
+          <ul className="space-y-2">
+            <li>
+              <a href="mailto:support@lifemade.app" className="text-sm text-gray-600 hover:text-black transition-colors">
+                Contact
+              </a>
+            </li>
+            <li>
+              <a href="mailto:support@lifemade.app" className="text-sm text-gray-600 hover:text-black transition-colors">
+                Press
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Bottom Row: Copyright and Social Links */}
+      <div className="max-w-7xl mx-auto px-4 mt-2 py-4 border-t border-gray-200 flex flex-col sm:flex-row justify-between items-center">
+        <p className="text-sm text-gray-500">
+          © Copyright 2025, All rights reserved
+        </p>
+        <div className="flex space-x-4 mt-4 sm:mt-0">
+          <a
+            href="https://www.instagram.com/lifemade/"
+            className="text-gray-500 hover:text-black transition-colors"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faInstagram} className="w-6 h-6" />
+          </a>
+          <a
+            href="https://www.tiktok.com/@lifemade"
+            className="text-gray-500 hover:text-black transition-colors"
+            aria-label="TikTok"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faTiktok} className="w-6 h-6" />
+          </a>
+          <a
+            href="https://youtube.com/@lifemade?si=bocKiOxfi8Seyuez"
+            className="text-gray-500 hover:text-black transition-colors"
+            aria-label="YouTube"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faYoutube} className="w-6 h-6" />
+          </a>
         </div>
       </div>
     </footer>
   );
-} 
+}

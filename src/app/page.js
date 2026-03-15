@@ -4,6 +4,10 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
+import InfoSection from '../components/InfoSection';
+import ReasonsSection from '../components/ReasonsSection';
+import TestimonialsSection from '../components/TestimonialsSection';
+import RatingSection from '../components/RatingSection';
 import Footer from '../components/Footer';
 import { API_ENDPOINTS } from '../config/api';
 
@@ -84,66 +88,59 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-white">
+    <div className="overflow-x-hidden" style={{ backgroundImage: 'linear-gradient(to bottom, #FFFFFF, #FFFFF0, #F0F8FF, #FFFFF0)' }}>
       <Navbar />
-      <main className="min-h-screen">
-        <HeroSection />
-      </main>
+      <HeroSection />
+      <InfoSection />
+      <ReasonsSection />
+      <TestimonialsSection />
+      <RatingSection />
       <Footer />
 
       {/* Email Modal */}
       {showEmailModal && (
-        <div 
-          className={`fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4 transition-all duration-300 ease-out`}
-        >
-          <div 
-            className={`bg-white rounded-2xl max-w-md w-full mx-4 relative overflow-hidden shadow-2xl transform transition-all duration-300 ease-out ${
+        <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+          <div
+            className={`bg-gray-100 rounded-3xl p-6 max-w-sm w-full mx-4 relative transform transition-all duration-300 ease-out ${
               modalVisible ? 'scale-100 opacity-100 translate-y-0' : 'scale-95 opacity-0 translate-y-4'
             }`}
           >
-            {/* Close Button */}
             <button
               onClick={handleCloseModal}
-              className="absolute top-4 right-4 z-10 text-gray-500 hover:text-gray-700 transition-colors"
+              className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 transition-colors z-10"
+              aria-label="Close modal"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </button>
 
-            {/* Modal Content */}
-            <div className="p-8 text-center">
-              {/* Logo */}
-              <div className="mb-6">
-                <Image
-                  src="/logo-title.png"
-                  alt="Lifemade"
-                  width={180}
-                  height={40}
-                  className="h-8 w-auto mx-auto"
-                />
-              </div>
+            <div className="flex justify-center mb-4">
+              <Image
+                src="/logo-title.png"
+                alt="Lifemade"
+                width={120}
+                height={34}
+                className="h-8 w-auto"
+              />
+            </div>
 
-              {/* Main Image */}
-              <div className="mb-6">
-                <Image
-                  src="/main-img.png"
-                  alt="Lifemade App"
-                  width={300}
-                  height={200}
-                  className="w-full max-w-xs mx-auto rounded-lg"
-                />
-              </div>
+            <div className="flex justify-center mb-4">
+              <Image
+                src="/main-img.png"
+                alt="Lifemade App"
+                width={300}
+                height={200}
+                className="max-w-full h-auto object-contain"
+                style={{ maxHeight: '200px' }}
+              />
+            </div>
 
-              {/* Heading */}
-              <h2 className="text-2xl font-bold text-gray-900 mb-2">
-                CLAIM YOUR 3-DAY
+            <div className="text-center">
+              <h2 className="text-xl font-extrabold text-black mb-4">
+                CLAIM YOUR 3-DAY<br />FREE TRIAL
               </h2>
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                FREE TRIAL
-              </h3>
 
-              {/* Form */}
               <form onSubmit={handleGetFreeTrial} className="space-y-4">
                 <input
                   type="email"
@@ -151,37 +148,30 @@ export default function Home() {
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter Your Email"
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+                  className="w-full px-6 py-4 bg-gray-300 rounded-full text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
-                
-                {/* Terms Text */}
-                <p className="text-xs text-gray-500 mb-4">
+
+                <p className="text-xs text-gray-500 px-4">
                   By signing up, you agree to our{' '}
-                  <a href="/terms-and-conditions" className="underline hover:text-gray-700">
-                    Terms of Service
-                  </a>{' '}
+                  <a href="/terms-and-conditions" className="underline hover:text-gray-700">Terms of Service</a>{' '}
                   and{' '}
-                  <a href="/privacy-policy" className="underline hover:text-gray-700">
-                    Privacy Policy
-                  </a>
-                  . No commitment. Cancel anytime.
+                  <a href="/privacy-policy" className="underline hover:text-gray-700">Privacy Policy</a>.
+                  No commitment. Cancel anytime.
                 </p>
 
-                {/* Submit Message */}
                 {submitMessage && (
                   <p className="text-sm text-center text-gray-600 mb-2">
                     {submitMessage}
                   </p>
                 )}
 
-                {/* Submit Button */}
                 <button
                   type="submit"
                   disabled={!email.trim() || isSubmitting}
-                  className={`w-full py-3 rounded-lg font-semibold transition-all duration-200 ${
+                  className={`w-full text-lg py-4 px-6 rounded-full font-bold transition-colors ${
                     email.trim() && !isSubmitting
-                      ? 'bg-black text-white hover:bg-gray-800 cursor-pointer' 
-                      : 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                      ? 'bg-black text-white hover:bg-gray-900 cursor-pointer'
+                      : 'bg-gray-400 text-gray-200 cursor-not-allowed'
                   }`}
                 >
                   {isSubmitting ? 'Processing...' : 'Claim My Free Trial'}
