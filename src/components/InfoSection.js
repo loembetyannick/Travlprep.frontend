@@ -63,8 +63,8 @@ const features = [
 
 export default function InfoSection() {
   return (
-    <section className="py-16 lg:py-24 px-4">
-      <h2 className="text-center text-4xl mt-36 lg:text-[48px] font-medium mb-4 lg:mb-6">
+    <section className="py-8 lg:py-24 px-4">
+      <h2 className="text-center text-4xl mt-12 lg:mt-36 lg:text-[48px] font-medium mb-4 lg:mb-6">
         What does Lifemade include?
       </h2>
       <p className="text-center text-lg text-gray-600 max-w-2xl mx-auto mb-12 lg:mb-16">

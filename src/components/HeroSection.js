@@ -53,7 +53,7 @@ export default function HeroSection() {
       </div>
 
       {/* Right Content - Hero Image */}
-      <div className="overflow-hidden sm:overflow-visible mx-auto mt-10 sm:mt-0 pb-20 sm:pb-0">
+      <div className="overflow-hidden sm:overflow-visible mx-auto mt-10 sm:mt-0 pb-8 sm:pb-0">
         <Image
           src="/main-img.png"
           alt="Lifemade App Screenshots"
