@@ -91,10 +91,10 @@ export default function Home() {
     <div className="overflow-x-hidden" style={{ backgroundImage: 'linear-gradient(to bottom, #FFFFFF, #FFFFF0, #F0F8FF, #FFFFF0)' }}>
       <Navbar />
       <HeroSection />
-      <InfoSection />
+      {/* <InfoSection />
       <ReasonsSection />
       <TestimonialsSection />
-      <RatingSection />
+      <RatingSection /> */}
       <Footer />
 
       {/* Email Modal */}
