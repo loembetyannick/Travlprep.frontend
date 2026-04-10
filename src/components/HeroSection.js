@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function HeroSection() {
   return (
-    <main className="grid grid-cols-1 lg:grid-cols-2 mt-6 sm:mt-10 items-center max-w-screen-xl mx-auto">
+    <main className="grid grid-cols-1 lg:grid-cols-2 items-center max-w-screen-xl mx-auto min-h-[calc(100vh-80px)] py-10 sm:py-16">
       <div className="flex flex-col gap-5 sm:gap-4 px-6 sm:px-8 lg:px-0 lg:w-fit lg:mx-auto">
         {/* Social Proof Pill */}
         <div className="flex items-center h-[42.5px] border border-[#c6c6c68f] rounded-full p-1.5 pr-3 text-xs gap-2 w-fit">
