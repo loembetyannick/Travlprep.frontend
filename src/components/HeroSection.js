@@ -18,19 +18,21 @@ export default function HeroSection() {
 
         {/* Main Heading */}
         <h1 className="text-[36px] sm:text-[44px] lg:text-[52px] font-bold leading-tight">
-          Meet Lifemade<br />
+          Meet Lifemade.<br />
           <span className="font-medium">
-            Plan, Capture<br />
-            and Relive Moments
+            Screenshot it.<br />
+            We&apos;ll sort it.
           </span>
         </h1>
 
         {/* Description */}
         <p className="opacity-60 text-sm sm:text-base font-normal max-w-[510px]">
-          The only app that connects every part of your experience. Planning
-          before, capturing during, and reliving after. Drop pins on a map,
-          build itineraries, and watch your photos organise themselves. Your
-          best moments deserve more than a folder you never open.
+          Your trip info is everywhere. Bookings in email, restaurants saved on
+          TikTok, activities in a Google Doc, screenshots buried in your camera
+          roll. Lifemade turns that mess into a beautiful, organised trip plan.
+          Just import your screenshots and Lifemade figures out what everything
+          is and puts it where it belongs. Itinerary, documents, packing list,
+          map. One place. Zero typing.
         </p>
 
         {/* App Store Badge */}
