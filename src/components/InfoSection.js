@@ -12,7 +12,7 @@ const features = [
     ),
     title: 'Plan your moments',
     description:
-      'Use Lifemade as your trip planner, event planner, or everyday adventure organiser. Add a title, pick a date, and your plan is ready.',
+      'Use Travlprep as your trip planner, event planner, or everyday adventure organiser. Add a title, pick a date, and your plan is ready.',
   },
   {
     icon: (
@@ -65,7 +65,7 @@ export default function InfoSection() {
   return (
     <section className="py-8 lg:py-24 px-4">
       <h2 className="text-center text-4xl mt-12 lg:mt-36 lg:text-[48px] font-medium mb-4 lg:mb-6">
-        What does Lifemade include?
+        What does Travlprep include?
       </h2>
       <p className="text-center text-lg text-gray-600 max-w-2xl mx-auto mb-12 lg:mb-16">
         The only travel planner and photo organiser that connects every part of your experience
@@ -76,7 +76,7 @@ export default function InfoSection() {
       <div className="max-w-5xl mx-auto mb-16 lg:mb-20">
         <Image
           src="/Screenshot 2026-03-30 at 20.28.17.png"
-          alt="Lifemade app features — Create Plans, Build Map, Plan Itinerary, Relive Memories, Explore Past Plans"
+          alt="Travlprep app features — Create Plans, Build Map, Plan Itinerary, Relive Memories, Explore Past Plans"
           width={1930}
           height={1046}
           className="w-full h-auto rounded-2xl"

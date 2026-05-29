@@ -12,16 +12,16 @@ export default function Footer() {
           <div className="flex items-center gap-2">
             <Image
               src="/logo-title.png"
-              alt="Lifemade"
+              alt="Travlprep"
               width={120}
               height={36}
               className="h-8 w-auto"
             />
           </div>
-          <p className="text-sm text-gray-600 mt-2">Download Lifemade</p>
+          <p className="text-sm text-gray-600 mt-2">Download Travlprep</p>
           <div className="flex flex-col lg:flex-row gap-2">
             <a
-              href="https://apps.apple.com/gb/app/lifemade-travel-planner/id6670488133"
+              href="https://apps.apple.com/gb/app/travlprep/id6670488133"
               className="block"
               target="_blank"
               rel="noopener noreferrer"
@@ -59,12 +59,12 @@ export default function Footer() {
           <h3 className="text-base font-semibold text-black mb-4">Company</h3>
           <ul className="space-y-2">
             <li>
-              <a href="mailto:support@lifemade.app" className="text-sm text-gray-600 hover:text-black transition-colors">
+              <a href="mailto:support@travlprep.com" className="text-sm text-gray-600 hover:text-black transition-colors">
                 Contact
               </a>
             </li>
             <li>
-              <a href="mailto:support@lifemade.app" className="text-sm text-gray-600 hover:text-black transition-colors">
+              <a href="mailto:support@travlprep.com" className="text-sm text-gray-600 hover:text-black transition-colors">
                 Press
               </a>
             </li>
@@ -79,7 +79,7 @@ export default function Footer() {
         </p>
         <div className="flex space-x-4 mt-4 sm:mt-0">
           <a
-            href="https://www.instagram.com/lifemade/"
+            href="https://www.instagram.com/travlprep/"
             className="text-gray-500 hover:text-black transition-colors"
             aria-label="Instagram"
             target="_blank"
@@ -88,7 +88,7 @@ export default function Footer() {
             <FontAwesomeIcon icon={faInstagram} className="w-6 h-6" />
           </a>
           <a
-            href="https://www.tiktok.com/@lifemade"
+            href="https://www.tiktok.com/@travlprep"
             className="text-gray-500 hover:text-black transition-colors"
             aria-label="TikTok"
             target="_blank"
@@ -97,7 +97,7 @@ export default function Footer() {
             <FontAwesomeIcon icon={faTiktok} className="w-6 h-6" />
           </a>
           <a
-            href="https://youtube.com/@lifemade?si=bocKiOxfi8Seyuez"
+            href="https://youtube.com/@travlprep"
             className="text-gray-500 hover:text-black transition-colors"
             aria-label="YouTube"
             target="_blank"

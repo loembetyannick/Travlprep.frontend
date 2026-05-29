@@ -19,7 +19,7 @@ export default function Navbar() {
             <Link href="/" className="flex items-center">
               <Image
                 src="/logo-title.png"
-                alt="Lifemade"
+                alt="Travlprep"
                 width={180}
                 height={40}
                 className="h-8 w-auto"
@@ -50,8 +50,8 @@ export default function Navbar() {
           {/* Desktop Navigation - Centered */}
           <div className="hidden lg:flex justify-center absolute left-1/2 transform top-7 -translate-x-1/2 gap-[30px] text-base font-medium">
             <Link href="/" className="hover:text-gray-600 transition-colors">Home</Link>
-            <a href="mailto:support@lifemade.app" className="hover:text-gray-600 transition-colors">Press</a>
-            <a href="mailto:support@lifemade.app?subject=Feedback" className="hover:text-gray-600 transition-colors">Feedback</a>
+            <a href="mailto:support@travlprep.com" className="hover:text-gray-600 transition-colors">Press</a>
+            <a href="mailto:support@travlprep.com?subject=Feedback" className="hover:text-gray-600 transition-colors">Feedback</a>
           </div>
 
           {/* Mobile Navigation */}
@@ -62,15 +62,15 @@ export default function Navbar() {
                   <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
                 </li>
                 <li className="py-2">
-                  <a href="mailto:support@lifemade.app" onClick={() => setIsMobileMenuOpen(false)}>Press</a>
+                  <a href="mailto:support@travlprep.com" onClick={() => setIsMobileMenuOpen(false)}>Press</a>
                 </li>
                 <li className="py-2">
-                  <a href="mailto:support@lifemade.app?subject=Feedback" onClick={() => setIsMobileMenuOpen(false)}>Feedback</a>
+                  <a href="mailto:support@travlprep.com?subject=Feedback" onClick={() => setIsMobileMenuOpen(false)}>Feedback</a>
                 </li>
               </ul>
               <div className="w-full items-center mt-3 gap-4 flex">
                 <a
-                  href="https://apps.apple.com/gb/app/lifemade-travel-planner/id6670488133"
+                  href="https://apps.apple.com/gb/app/travlprep/id6670488133"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block hover:opacity-80 transition-opacity"
@@ -92,7 +92,7 @@ export default function Navbar() {
         {/* App Store Button (Desktop) */}
         <div className="hidden lg:flex min-w-[180px] items-center gap-4">
           <a
-            href="https://apps.apple.com/gb/app/lifemade-travel-planner/id6670488133"
+            href="https://apps.apple.com/gb/app/travlprep/id6670488133"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block hover:opacity-80 transition-opacity"

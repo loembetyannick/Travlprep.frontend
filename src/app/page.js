@@ -20,7 +20,7 @@ export default function Home() {
 
   useEffect(() => {
     // Check if the modal has been shown before
-    const hasSeenModal = localStorage.getItem('lifemade-email-modal-seen');
+    const hasSeenModal = localStorage.getItem('travlprep-email-modal-seen');
     if (!hasSeenModal) {
       // Show modal after a short delay for better UX
       const timer = setTimeout(() => {
@@ -38,7 +38,7 @@ export default function Home() {
     setTimeout(() => {
       setShowEmailModal(false);
       // Remember that user has seen the modal
-      localStorage.setItem('lifemade-email-modal-seen', 'true');
+      localStorage.setItem('travlprep-email-modal-seen', 'true');
     }, 300);
   };
 
@@ -79,7 +79,7 @@ export default function Home() {
       await new Promise(resolve => setTimeout(resolve, 1500));
     } finally {
       // Redirect to App Store regardless of subscription result
-      window.open('https://apps.apple.com/gb/app/lifemade-travel-planner/id6670488133', '_blank');
+      window.open('https://apps.apple.com/gb/app/travlprep/id6670488133', '_blank');
       
       // Close modal and remember it was seen
       setIsSubmitting(false);
@@ -118,7 +118,7 @@ export default function Home() {
             <div className="flex justify-center mb-4">
               <Image
                 src="/logo-title.png"
-                alt="Lifemade"
+                alt="Travlprep"
                 width={120}
                 height={34}
                 className="h-8 w-auto"
@@ -128,7 +128,7 @@ export default function Home() {
             <div className="flex justify-center mb-4">
               <Image
                 src="/main-img.png"
-                alt="Lifemade App"
+                alt="Travlprep app"
                 width={300}
                 height={200}
                 className="max-w-full h-auto object-contain"

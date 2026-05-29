@@ -4,26 +4,26 @@ export default function ReasonsSection() {
       icon: '📸',
       title: "Don't let your memories disappear",
       description:
-        'The average person has over 40,000 photos on their phone and will look back at less than 3% of them. Lifemade makes sure your best moments are always easy to find and relive.',
+        'The average person has over 40,000 photos on their phone and will look back at less than 3% of them. Travlprep makes sure your best moments are always easy to find and relive.',
     },
     {
       icon: '📍',
       title: 'Plan, capture, and relive. All in one place.',
       description:
-        'Lifemade is the only app that connects every part of your experience. Plan before, capture during, and relive after, so nothing gets lost.',
+        'Travlprep is the only app that connects every part of your experience. Plan before, capture during, and relive after, so nothing gets lost.',
     },
     {
       icon: '✨',
       title: 'Your life, beautifully kept',
       description:
-        'Lifemade is not just a planning app or a photo app. It is a record of the life you are actually living. Organised, visual, and always there when you want to look back.',
+        'Travlprep is not just a planning app or a photo app. It is a record of the life you are actually living. Organised, visual, and always there when you want to look back.',
     },
   ];
 
   return (
     <section className="px-4 mb-32">
       <h2 className="text-center text-[48px] font-medium mt-40">
-        Why choose Lifemade?
+        Why choose Travlprep?
       </h2>
       <p className="text-center text-lg text-[#262626] font-normal mb-20">
         Don&apos;t let your memories disappear.

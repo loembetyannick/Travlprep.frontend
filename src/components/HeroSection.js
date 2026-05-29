@@ -18,7 +18,7 @@ export default function HeroSection() {
 
         {/* Main Heading */}
         <h1 className="text-[36px] sm:text-[44px] lg:text-[52px] font-bold leading-tight">
-          Meet Lifemade.<br />
+          Meet Travlprep.<br />
           <span className="font-medium">
             Screenshot it.<br />
             We&apos;ll sort it.
@@ -27,18 +27,17 @@ export default function HeroSection() {
 
         {/* Description */}
         <p className="opacity-60 text-sm sm:text-base font-normal max-w-[510px]">
-          Your trip info is everywhere. Bookings in email, restaurants saved on
-          TikTok, activities in a Google Doc, screenshots buried in your camera
-          roll. Lifemade turns that mess into a beautiful, organised trip plan.
-          Just import your screenshots and Lifemade figures out what everything
-          is and puts it where it belongs. Itinerary, documents, packing list,
-          map. One place. Zero typing.
+          Travlprep helps you travel spontaneously without losing the good
+          ideas. Save places from screenshots, socials, and recommendations,
+          then turn them into a simple trip plan with your map, itinerary,
+          documents, packing list, and photo memories in one place. Keep the
+          boring stuff organised so the trip still feels free.
         </p>
 
         {/* App Store Badge */}
         <div className="flex sm:flex-row flex-col gap-4 mt-2">
           <a
-            href="https://apps.apple.com/gb/app/lifemade-travel-planner/id6670488133"
+            href="https://apps.apple.com/gb/app/travlprep/id6670488133"
             className="block"
             target="_blank"
             rel="noopener noreferrer"
@@ -58,7 +57,7 @@ export default function HeroSection() {
       <div className="overflow-hidden sm:overflow-visible mx-auto mt-10 sm:mt-0 pb-8 sm:pb-0">
         <Image
           src="/main-img.png"
-          alt="Lifemade App Screenshots"
+          alt="Travlprep app screenshots"
           width={700}
           height={700}
           className="w-auto max-h-[500px] sm:max-h-[700px] object-contain"

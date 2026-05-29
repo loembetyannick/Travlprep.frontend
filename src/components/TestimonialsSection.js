@@ -9,7 +9,7 @@ const testimonials = [
   {
     name: 'Sarah',
     image: '/ellipse-7.png',
-    text: '"I planned my entire birthday weekend on Lifemade. The itinerary kept everything on track and now I have a beautiful visual memory of the whole thing."',
+    text: '"I planned my entire birthday weekend on Travlprep. The itinerary kept everything on track and now I have a beautiful visual memory of the whole thing."',
   },
   {
     name: 'Noah',
