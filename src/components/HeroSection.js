@@ -20,18 +20,18 @@ export default function HeroSection() {
         <h1 className="text-[36px] sm:text-[44px] lg:text-[52px] font-bold leading-tight">
           Meet Travlprep.<br />
           <span className="font-medium">
-            Screenshot it.<br />
-            We&apos;ll sort it.
+            Less stress.<br />
+            More travel.
           </span>
         </h1>
 
         {/* Description */}
         <p className="opacity-60 text-sm sm:text-base font-normal max-w-[510px]">
-          Travlprep helps you travel spontaneously without losing the good
-          ideas. Save places from screenshots, socials, and recommendations,
-          then turn them into a simple trip plan with your map, itinerary,
-          documents, packing list, and photo memories in one place. Keep the
-          boring stuff organised so the trip still feels free.
+          You always forget something. The insurance you meant to sort. The
+          confirmation you can&apos;t find. The place you saved months ago and
+          lost. Travlprep keeps your checklist, your bookings, and your pinned
+          places in one place so nothing slips through the cracks. Sort it all
+          before you leave and arrive knowing everything&apos;s handled.
         </p>
 
         {/* App Store Badge */}
