@@ -37,7 +37,7 @@ export default function HeroSection() {
         {/* App Store Badge */}
         <div className="flex sm:flex-row flex-col gap-4 mt-2">
           <a
-            href="https://apps.apple.com/gb/app/travlprep/id6670488133"
+            href="https://apps.apple.com/gb/app/travlprep-travel-plans/id6670488133"
             className="block"
             target="_blank"
             rel="noopener noreferrer"

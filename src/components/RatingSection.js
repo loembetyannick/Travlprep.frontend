@@ -30,7 +30,7 @@ export default function RatingSection() {
 
         <div className="flex flex-col sm:flex-row gap-4 mt-10 items-center">
           <a
-            href="https://apps.apple.com/gb/app/travlprep/id6670488133"
+            href="https://apps.apple.com/gb/app/travlprep-travel-plans/id6670488133"
             className="block"
             target="_blank"
             rel="noopener noreferrer"

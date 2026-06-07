@@ -21,7 +21,7 @@ export default function Footer() {
           <p className="text-sm text-gray-600 mt-2">Download Travlprep</p>
           <div className="flex flex-col lg:flex-row gap-2">
             <a
-              href="https://apps.apple.com/gb/app/travlprep/id6670488133"
+              href="https://apps.apple.com/gb/app/travlprep-travel-plans/id6670488133"
               className="block"
               target="_blank"
               rel="noopener noreferrer"

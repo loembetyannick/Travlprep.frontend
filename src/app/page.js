@@ -79,7 +79,7 @@ export default function Home() {
       await new Promise(resolve => setTimeout(resolve, 1500));
     } finally {
       // Redirect to App Store regardless of subscription result
-      window.open('https://apps.apple.com/gb/app/travlprep/id6670488133', '_blank');
+      window.open('https://apps.apple.com/gb/app/travlprep-travel-plans/id6670488133', '_blank');
       
       // Close modal and remember it was seen
       setIsSubmitting(false);

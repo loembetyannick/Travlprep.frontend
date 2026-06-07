@@ -70,7 +70,7 @@ export default function Navbar() {
               </ul>
               <div className="w-full items-center mt-3 gap-4 flex">
                 <a
-                  href="https://apps.apple.com/gb/app/travlprep/id6670488133"
+                  href="https://apps.apple.com/gb/app/travlprep-travel-plans/id6670488133"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block hover:opacity-80 transition-opacity"
@@ -92,7 +92,7 @@ export default function Navbar() {
         {/* App Store Button (Desktop) */}
         <div className="hidden lg:flex min-w-[180px] items-center gap-4">
           <a
-            href="https://apps.apple.com/gb/app/travlprep/id6670488133"
+            href="https://apps.apple.com/gb/app/travlprep-travel-plans/id6670488133"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block hover:opacity-80 transition-opacity"
